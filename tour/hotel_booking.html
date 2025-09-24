@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTEL BOOKING</title>
+    <link rel="icon" href="./img/mammal_15707668.png">
+</head>
+<body>
+    <header id="form_h_img">
+        <img src="./img/image.png" alt="">
+        
+    </header>
+    <section id="form_container">
+        <h1 class="form_head">Hotel Reservation Form</h1>
+        <h3>Please complete the form below</h3>
+        <h4>Your registration will be verified prior to your arrival</h4>
+        
+        <form action="" class="flex_container" >
+            <div class="flex_group_inner_flex" style="display: flex; flex-direction: column;">
+                <div><label for="Name">Name</label></div>
+                <div style="display: flex; flex-direction: row;"><input style="flex-grow: 1;" type="name"  required placeholder="Enter your first name"><input style="flex-grow: 1;" type="name" placeholder="last name"></div>
+            </div>
+            <div class="flex_group_2row">
+                <label for="Address">Address</label>
+                <input type="text"  required placeholder="Ex:John Doe, 456 Elm Street">
+            </div>
+            <div class="flex_group_inner_flex">
+                <div>
+                <label for="City">City</label>
+                <input type="name" required ></div>
+                <div>
+                <label for="State">State</label>
+                <input type="name" required></div>
+            </div>
+            <div class="flex_group_inner_flex">
+                <div>
+                <label for="phone">Phone number</label><br>
+                <input type="tel" required></div>
+                <div>
+                <label for="Email">Email</label><br>
+                <input type="email" required></div>
+            </div>
+            <div class="flex_group_inner_flex">
+                <div><label for="Arrival-Date">Arrival-Date</label><br>
+                <input type="date" required></div>
+                <div>
+                <label for="Depature-Date">Depature-Date</label><br>
+                <input type="date" required></div>
+            </div>
+            <div class="flex_group_inner_flex">
+                <div>
+                <label for="Email">Number of Adults</label><br>
+                <input type="number" required></div>
+                <div>
+                <label for="Email">Number of Kids</label><br>
+                <input type="number"  required></div>
+            </div>
+            <div class="flex_group_inner_flex">
+                <div style="display: flex;  align-items: start;">
+                <label for="cash">Cash</label><br>
+                <input type="radio"  required>
+                </div>
+                <div style="display: flex;  align-items: start;">
+                <label for="Gpay">Gpay</label><br>
+                <input type="radio" required>
+                </div>
+            </div>
+            <div class="flex_group_2row">
+                <label for="description">Do you have any special request</label>
+                <textarea name="textarea" id="" rows="5" required></textarea>
+            </div>
+            <div class="submit">
+                <input type="submit" >
+                <a href="./index.html">Go back</a>
+            </div>
+
+
+            
+        </form>
+
+    </section>
+    
+</body>
+<style>
+    *,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    #form_h_img > img{
+        height: 60vh;
+        width: 100vw;
+    }
+    #form_container{
+        background-color: white;
+        height: auto;
+        width: 100vw;
+    }
+    #form_container > h1, h3, h4{
+        text-align: center;
+        margin: 25px;
+    }
+    #form_container > h1{
+        font-size: 4rem;
+        color: rgb(22, 87, 239);
+    }
+    #form_container > h3 {
+        font-size: 2rem;
+        color: rgb(22, 87, 239);
+    }
+    #form_container > h4{
+        font-size: 23px;
+        color: rgb(22, 87, 239);
+    }
+
+    /* form flex */
+.flex_container{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    /* width: 80vw; */
+    margin: 10%;
+}
+
+.flex_group{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    
+        /* justify-content: space-between; */
+    
+}
+.flex_group_inner_flex{
+    
+    display: flex;
+    flex-direction: row;
+
+}
+.flex_group_inner_flex > div{
+    
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    
+    padding: 2%;
+}
+/* .flex_group_inner_flex > div >label,input{
+    flex-grow: 1;
+    
+} */
+
+
+.flex_group_2row{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    
+}
+
+input, textarea{
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+label{
+    font-size: 20px;
+    font-weight: bolder;
+}
+input {
+      border: 1px solid gray;
+      padding: 8px;
+      border-radius: 5px;
+      outline: none; /* removes the default browser outline */
+    }
+
+input:focus, textarea {
+      border-color: dodgerblue; /* border color when focused */
+      box-shadow: 0 0 5px dodgerblue; /* optional glow effect */
+    }
+.submit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    
+}
+.submit > input{
+    background-color: darkblue;
+    padding: 16px;
+    font-weight:bolder ;
+    color: white;
+    letter-spacing: 1px;
+}
+.submit > a{
+    text-decoration: none;
+}
+
+
+</style>
+</html>
